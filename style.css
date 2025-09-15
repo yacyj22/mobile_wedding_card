@@ -1,0 +1,79 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3ed;
+    color: #5d4a41;
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1.5s ease-in-out;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.content-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    max-width: 90%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+.section.active .content-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+}
+#main-section {
+    background-image: url('https://images.unsplash.com/photo-1542178229-28c11e389d36');
+}
+#main-section h1 { font-size: 3rem; margin: 0; font-weight: 700; }
+#main-section p { font-size: 1.5rem; margin-top: 10px; }
+#story-section-1 {
+    background-image: url('https://images.unsplash.com/photo-1532467504-9c20a9a95782');
+}
+#story-section-1 .content-wrapper { color: white; background-color: rgba(0, 0, 0, 0.4); }
+#story-section-2 {
+    background-image: url('https://images.unsplash.com/photo-1517700018593-57f33d7b3296');
+}
+#story-section-2 .content-wrapper { color: white; background-color: rgba(0, 0, 0, 0.4); }
+#invite-section {
+    background-image: url('https://images.unsplash.com/photo-1558230598-a28a39a06617');
+}
+#invite-section .content-wrapper { color: white; background-color: rgba(0, 0, 0, 0.5); }
+#invite-section h2 { font-size: 1.8rem; color: #c4765d; }
+#invite-section .couple-names { font-size: 1.8rem; font-weight: bold; color: #c4765d; margin-top: 20px;}
+#location-section {
+    background-image: url('https://images.unsplash.com/photo-1507968538624-9b275681c2f7');
+}
+#location-section .content-wrapper { color: white; background-color: rgba(0, 0, 0, 0.5); }
+#location-section h2 { font-size: 1.5rem; color: #f0f0f0; }
+#location-section a.map-link {
+    display: inline-block; text-decoration: none; color: white; background-color: #c4765d;
+    padding: 12px 25px; border-radius: 5px; margin-top: 20px; font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+#account-section {
+    background-image: url('https://images.unsplash.com/photo-1582234296996-c6b701255e2d');
+}
+#account-section .content-wrapper { color: white; background-color: rgba(0, 0, 0, 0.4); }
+#account-section h3 { font-size: 1.5rem; color: #c4765d; margin-top: 20px;}
+.footer {
+    padding: 20px; font-size: 0.8rem; color: #999; text-align: center;
+    background-color: #f0f0f0; min-height: auto;
+}
